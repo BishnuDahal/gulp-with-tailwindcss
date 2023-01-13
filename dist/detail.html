@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+  <div class="relative sticky top-0 z-50">
+  <div class="sm:px-[40px] bg-[#821F05]">
+    <nav class="flex items-center justify-between flex-wrap text-white xl:p-2 lg:p-2 md:p-2 p-8 font-medium text-sm">
+      <div class="mb-2 hidden md:flex lg:flex items-center flex-shrink-0 text-white mr-0 lg:mr-8">
+        <img src="https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/logo/logo_1.png"
+          class="cursor-pointer fill-current object-fill h-10 w-[70px] lg:h-16 lg:w-[120px]" alt="logo" />
+      </div>
+      <div class="w-full hidden flex-grow md:flex md:items-center md:w-auto  z-10 text-white">
+        <div
+          class="text-sm md:flex text-white items-center md:flex-grow space-x-[36px] sm:text-[11px] md:text-[15px] lg:text-[20px] text-bold justify-center">
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Home</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Category</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Features</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Products</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Testimonals</p>
+        </div>
+      </div>
+      <div class="hidden relative lg:flex md:flex items-center justify-between">
+        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+          class="w-8 mr-4 fill-white cursor-pointer">
+          <path fill-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+            clip-rule="evenodd"></path>
+        </svg></div>
+        <div class="relative cursor-pointer items-center hover:border-transparent hover:text-white-500 hover:bg-red">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+            class="w-8 fill-white">
+            <path
+              d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+            </path>
+          </svg><span
+            class="flex absolute w-[20px] h-[20px] text-white text-center items-center justify-center top-[-10px] right-[-10px] bg-red-600 p-2 rounded-full">0</span>
+        </div>
+      
+        <div class="ml-4 lg:mt-0 cursor-pointer hover:text-gray-300 hover:bg-gray-500">
+          <div>
+            <div class="flex lg:hidden md:hidden"><button
+                class="bg-button text-white p-2 px-8 rounded-3xl ">SignIn/Register</button></div>
+            <div class="hidden lg:block md:block">
+              <img src="./img//profile.svg" id="search_icon" class="w-8 fill-white cursor-pointer" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="lg:hidden md:hidden fixed top-0 bottom-0 right-0 left-0 z-40">
+      <div class="flex justify-between items-center py-4 px-4">
+        <div><img src="./img/blogo.png" class="" /></div>
+        <div>
+          <img src="https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/logo/logo_1.png"
+            class="cursor-pointer fill-current object-fill h-10 w-[78px] lg:h-16 lg:w-40" alt="logo" />
+        </div>
+        <div class="flex justify-between gap-3">
+          <div class="relative cursor-pointer items-center hover:border-transparent hover:text-white-500 hover:bg-red">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+              class="w-8 fill-white">
+              <path
+                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+              </path>
+            </svg><span
+              class="flex absolute w-[20px] h-[20px] text-white text-center items-center justify-center top-[-10px] right-[-10px] bg-red-600 p-2 rounded-full">0</span>
+          </div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+              class="w-8 mr-4 fill-white cursor-pointer">
+              <path fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"></path>
+            </svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div id="detail" class="flex flex-col mt-12 sm:grid sm:grid-cols-2 m-5 md:m-10 p-0">
+    <div class="flex flex-col"><img
+        src="http://cdn.dibtech.com.au/oS07fwsuG6LCX7px9wJF11cdUjk=/500x500/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Lamb-Backstrap-Silver-Skin-off.jpg"
+        alt="">
+      <div class="grid grid-cols-4 flex-row my-4"></div>
+    </div>
+    <div class="flex flex-col justify-center md:ml-12 drop-shadow-lg bg-white p-4 pl-10">
+      <h1 class="text-[30px] lg:text-[3rem] font-bold px-2">BEEF</h1>
+      <div class="flex flex-row">
+        <h2 class="mt-4 text-[1.6rem] text-gray-600 ml-4"><span>$</span>30.00</h2>
+      </div>
+      <p class="my-4"></p>
+      <div class="flex flex-col md:flex-row lg:text-center items-start lg:items-center ml-3 lg:ml-0">
+        <div class=" flex flex-row text-left items-center"><span class="mr-2 font-bold">Quantity:</span><input
+            type="number" class="max-w-[100px] p-2 border outline-none rounded-md" min="0" value="1"></div>
+        <div class="lg:ml-2">
+          <div class="flex items-center justify-center lg:justify-center my-4"><button
+              class="bg-button border-button hover:bg-[hover:bg-slate-600] text-white p-2 px-8 rounded-lg cursor-pointer uppercase tracking-wider">ADD
+              TO CART</button></div>
+        </div>
+      </div>
+      <div class="flex flex-row text-center items-center justify-start mt-4 ml-3 lg:ml-0">
+        <span>Category:</span><span class="border border-gray-300 cursor-pointer ml-2 p-1">BEEF</span><span
+          class="border border-gray-300 cursor-pointer ml-2 p-1">topSelling</span>
+      </div>
+      <p class="my-4 max-w-[600px]"></p>
+      <div class="flex gap-4 mt-3"><button aria-label="facebook"><svg
+            viewBox="0 0 64 64" width="32" height="32">
+            <rect width="64" height="64" rx="0" ry="0" fill="#3b5998"></rect>
+            <path
+              d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+              fill="white"></path>
+          </svg></button><button aria-label="twitter"><svg
+            viewBox="0 0 64 64" width="32" height="32">
+            <rect width="64" height="64" rx="0" ry="0" fill="#00aced"></rect>
+            <path
+              d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"
+              fill="white"></path>
+          </svg></button><button aria-label="whatsapp"><svg
+            viewBox="0 0 64 64" width="32" height="32">
+            <rect width="64" height="64" rx="0" ry="0" fill="#25D366"></rect>
+            <path
+              d="m42.32286,33.93287c-0.5178,-0.2589 -3.04726,-1.49644 -3.52105,-1.66732c-0.4712,-0.17346 -0.81554,-0.2589 -1.15987,0.2589c-0.34175,0.51004 -1.33075,1.66474 -1.63108,2.00648c-0.30032,0.33658 -0.60064,0.36247 -1.11327,0.12945c-0.5178,-0.2589 -2.17994,-0.80259 -4.14759,-2.56312c-1.53269,-1.37217 -2.56312,-3.05503 -2.86603,-3.57283c-0.30033,-0.5178 -0.03366,-0.80259 0.22524,-1.06149c0.23301,-0.23301 0.5178,-0.59547 0.7767,-0.90616c0.25372,-0.31068 0.33657,-0.5178 0.51262,-0.85437c0.17088,-0.36246 0.08544,-0.64725 -0.04402,-0.90615c-0.12945,-0.2589 -1.15987,-2.79613 -1.58964,-3.80584c-0.41424,-1.00971 -0.84142,-0.88027 -1.15987,-0.88027c-0.29773,-0.02588 -0.64208,-0.02588 -0.98382,-0.02588c-0.34693,0 -0.90616,0.12945 -1.37736,0.62136c-0.4712,0.5178 -1.80194,1.76053 -1.80194,4.27186c0,2.51134 1.84596,4.945 2.10227,5.30747c0.2589,0.33657 3.63497,5.51458 8.80262,7.74113c1.23237,0.5178 2.1903,0.82848 2.94111,1.08738c1.23237,0.38836 2.35599,0.33657 3.24402,0.20712c0.99159,-0.15534 3.04985,-1.24272 3.47963,-2.45956c0.44013,-1.21683 0.44013,-2.22654 0.31068,-2.45955c-0.12945,-0.23301 -0.46601,-0.36247 -0.98382,-0.59548m-9.40068,12.84407l-0.02589,0c-3.05503,0 -6.08417,-0.82849 -8.72495,-2.38189l-0.62136,-0.37023l-6.47252,1.68286l1.73463,-6.29129l-0.41424,-0.64725c-1.70875,-2.71846 -2.6149,-5.85116 -2.6149,-9.07706c0,-9.39809 7.68934,-17.06155 17.15993,-17.06155c4.58253,0 8.88029,1.78642 12.11655,5.02268c3.23625,3.21036 5.02267,7.50812 5.02267,12.06476c-0.0078,9.3981 -7.69712,17.06155 -17.14699,17.06155m14.58906,-31.58846c-3.93529,-3.80584 -9.1133,-5.95471 -14.62789,-5.95471c-11.36055,0 -20.60848,9.2065 -20.61625,20.52564c0,3.61684 0.94757,7.14565 2.75211,10.26282l-2.92557,10.63564l10.93337,-2.85309c3.0136,1.63108 6.4052,2.4958 9.85634,2.49839l0.01037,0c11.36574,0 20.61884,-9.2091 20.62403,-20.53082c0,-5.48093 -2.14111,-10.64081 -6.03239,-14.51915"
+              fill="white"></path>
+          </svg></button><button aria-label="linkedin"><svg
+            viewBox="0 0 64 64" width="32" height="32">
+            <rect width="64" height="64" rx="0" ry="0" fill="#007fb1"></rect>
+            <path
+              d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"
+              fill="white"></path>
+          </svg></button></div>
+    </div>
+  </div>
+
+  <div id="products" class="md:py-[100px]">
+  <div class="p-2">
+    <h1 class="mt-4 text-[1.4rem] md:text-4xl md:font-bold text-center text-button">Products</h1>
+    <div class="md:m-[50px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center">
+      <a href="detail.html#detail">
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4">
+          <img
+            src="http://cdn.dibtech.com.au/AW_khSXEVMel8qaRjKwocpUr9ak=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/raw-tomahawk-steak-shutterstock_738822868.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl">
+          </div>
+          <span class="uppercase m-2 bold text-md ">BEEF</span>
+        </div>
+      </a>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/2tgvw4Se6cQnDSKnIoQctJIL94k=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Cartapo-Creek-Variety-Box.webp"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">CHICKEN</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/Xys7g1jj7A8Uq1STtEDTTWuWjoo=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/36_lamb_00.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">LAMB</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/gCvwfhEloxX3ZNMpsBA0jinzIbU=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/5bb79a1e220000bb01dd1c81.jpeg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">GOAT</span>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="w-full p-4 md:p-[100px] lg:p-[50px] bg-gray-900 ">
+  <div class="flex flex-col lg:flex-row md:justify-between lg:space-x-4 text-white font-Inter ">
+    <div class="flex flex-col leading-8 text-left">
+      <h1 class="text-xl lg:text-[1.5rem] font-bold border-b-[1px] pb-2">Contact for any Info</h1>
+      <hr class=" text-[#FFFFFF26] mt-2 block lg:hidden md:hidden">
+      <p class="mt-4 text-sm lg:text-xl leading-8 ">Always at your disposal for any question.<br>Call and we will be
+        happy to help.</p><a href="tel:+61 02 8363 7475"
+        class="flex text-sm lg:text-2xl mt-2 font-bold text-left decoration-none">
+        +61 02 8363 7475
+      </a><span class="flex block text-sm lg:text-2xl mt-2 font-bold text-left">
+
+        <a href="mailto:admin@rockdale.com">admin@rockdale.com</a>
+      </span><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/U9Xo9jrA77qrUNUP9"
+        class="text-sm lg:text-2xl mt-2 font-bold text-left">94 Railway St, Rockdale NSW 2216</a>
+    </div>
+    <div class="flex flex-col leading-8 text-left ">
+      <h1 class="text-xl lg:text-[1.5rem] font-bold border-b-[1px] pb-2">Stay Updated on Social</h1>
+      <hr class=" text-[#FFFFFF26] mt-2 block lg:hidden md:hidden">
+      <p class="mt-4 text-sm lg:text-xl leading-8 ">Channels always updated on the latest news.</p>
+      <div class="md:mt-4 flex flex-row space-x-2 "></div>
+    </div>
+    <div class="flex flex-col leading-8 text-left">
+      <h1 class="text-xl lg:text-[1.5rem] font-bold border-b-[1px] pb-2">Subscribe to the Newsletter</h1>
+      <hr class=" text-[#FFFFFF26] mt-2 block lg:hidden md:hidden">
+      <p class="mt-4 text-sm lg:text-xl leading-8 ">Receive our updates at any time.</p>
+      <form class="block mt-4 mb-8">
+        <div class="flex rounded-2xl mt-4 md:mt-0"><input type="email" placeholder="Enter your Email"
+            class="outline-none outline-none border-none text-white py-1 md:py-3 px-2 rounded-l-2xl bg-black"
+            value=""><button type="submit" class="bg-button rounded-r-2xl py-1 px-2 mr-4">Subscribe</button></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div
+  class="hidden md:flex lg:flex text-xs flex-col md:flex-row bg-gray-800 justify-between items-center p-8 text-white">
+  <div class="flex flex-col sm:flex-row pt-2 ">
+    <p class="pr-4">COPYRIGHT © 2022 - 2025 . ALL RIGHTS RESERVED.</p>
+  </div>
+  <div class="flex flex-col sm:flex-row pt-2"><a href="mailto:admin@rockdale.com"
+      class="pr-4 decoration-none cursor-pointer">admin@rockdale.com</a><span class="cursor-pointer">Powered by<a
+        target="_blank" rel="noreferrer" href="https://www.dibtech.com.au/"
+        class="text-[#822115] ml-1 text-md">Dibtech</a></span></div>
+</div>
+
+<div class="bg-gray-800 flex justify-center lg:hidden md:hidden"><span class="text-white p-3">Copyright-Rockdale Meat
+    Market </span></div>
+</body>
+
+</html>

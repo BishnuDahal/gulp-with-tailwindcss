@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulp Html Include Boilerplate</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <div class="relative sticky top-0 z-50">
+  <div class="sm:px-[40px] bg-[#821F05]">
+    <nav class="flex items-center justify-between flex-wrap text-white xl:p-2 lg:p-2 md:p-2 p-8 font-medium text-sm">
+      <div class="mb-2 hidden md:flex lg:flex items-center flex-shrink-0 text-white mr-0 lg:mr-8">
+        <img src="https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/logo/logo_1.png"
+          class="cursor-pointer fill-current object-fill h-10 w-[70px] lg:h-16 lg:w-[120px]" alt="logo" />
+      </div>
+      <div class="w-full hidden flex-grow md:flex md:items-center md:w-auto  z-10 text-white">
+        <div
+          class="text-sm md:flex text-white items-center md:flex-grow space-x-[36px] sm:text-[11px] md:text-[15px] lg:text-[20px] text-bold justify-center">
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Home</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Category</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Features</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Products</p>
+          <p class="block cursor-pointer md:inline-block  hover:text-gray-900">Testimonals</p>
+        </div>
+      </div>
+      <div class="hidden relative lg:flex md:flex items-center justify-between">
+        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+          class="w-8 mr-4 fill-white cursor-pointer">
+          <path fill-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+            clip-rule="evenodd"></path>
+        </svg></div>
+        <div class="relative cursor-pointer items-center hover:border-transparent hover:text-white-500 hover:bg-red">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+            class="w-8 fill-white">
+            <path
+              d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+            </path>
+          </svg><span
+            class="flex absolute w-[20px] h-[20px] text-white text-center items-center justify-center top-[-10px] right-[-10px] bg-red-600 p-2 rounded-full">0</span>
+        </div>
+      
+        <div class="ml-4 lg:mt-0 cursor-pointer hover:text-gray-300 hover:bg-gray-500">
+          <div>
+            <div class="flex lg:hidden md:hidden"><button
+                class="bg-button text-white p-2 px-8 rounded-3xl ">SignIn/Register</button></div>
+            <div class="hidden lg:block md:block">
+              <img src="./img//profile.svg" id="search_icon" class="w-8 fill-white cursor-pointer" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="lg:hidden md:hidden fixed top-0 bottom-0 right-0 left-0 z-40">
+      <div class="flex justify-between items-center py-4 px-4">
+        <div><img src="./img/blogo.png" class="" /></div>
+        <div>
+          <img src="https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/logo/logo_1.png"
+            class="cursor-pointer fill-current object-fill h-10 w-[78px] lg:h-16 lg:w-40" alt="logo" />
+        </div>
+        <div class="flex justify-between gap-3">
+          <div class="relative cursor-pointer items-center hover:border-transparent hover:text-white-500 hover:bg-red">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+              class="w-8 fill-white">
+              <path
+                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+              </path>
+            </svg><span
+              class="flex absolute w-[20px] h-[20px] text-white text-center items-center justify-center top-[-10px] right-[-10px] bg-red-600 p-2 rounded-full">0</span>
+          </div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+              class="w-8 mr-4 fill-white cursor-pointer">
+              <path fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"></path>
+            </svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Content -->
+
+  <div class="relative lg:mt-0 bg-[#E5E5E5]">
+    
+  <div class="w-full h-full relative object-cover overflow-hidden bg-cover text-center items-center justify-center  ">
+    <div class="h-[100%] md:h-[500px]"><img src="https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Fillet_Steak_Cooked.jpeg"
+        style="background-repeat:no-repeat;min-width:100%;width:100%;height:100%" class="object-cover brightness-50" >
+    </div>
+    <div class="h-auto w-full bg-black z-10 opacity-50"></div>
+    <div
+      class="p-4 w-full flex flex-col space-y-2 md:space-y-[30px] absolute m-auto h-full top-0 text-white z-0 flex flex-col justify-center items-center ">
+      <span class="text-4xl uppercase sm:items-center lg:text-[5rem] font-bold">Rockdale Meat Market</span>
+      <p class="uppercase text-sm md:text-lg sm-flex md:flex lg:flex xl:flex z-0I">Take Advantage of this amazing
+        exclusive offer hurry up! Price will change every day:</p><button
+        class="p-3 px-[30px] ml-2 text-sm md:text-lg font-medium text-white bg-[#821F05] rounded-full">Shop
+        Online</button>
+    </div>
+  </div>
+    <div id="category" class="md:py-[100px]">
+  <div class="p-2">
+    <h1 class="mt-4 text-[1.4rem] md:text-4xl md:font-bold text-center text-button">Categories</h1>
+    <div class="md:m-[50px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center">
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/AW_khSXEVMel8qaRjKwocpUr9ak=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/raw-tomahawk-steak-shutterstock_738822868.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">BEEF</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/2tgvw4Se6cQnDSKnIoQctJIL94k=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Cartapo-Creek-Variety-Box.webp"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">CHICKEN</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/Xys7g1jj7A8Uq1STtEDTTWuWjoo=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/36_lamb_00.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">LAMB</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/gCvwfhEloxX3ZNMpsBA0jinzIbU=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/5bb79a1e220000bb01dd1c81.jpeg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">GOAT</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/qRmcxolfrwB4D0ffxY7lwIQgBT4=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Fresh-Turkey-600x600.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">TURKEY</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/FUNDJxmCEc2D-WCMpXYCb-5UMRQ=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Turkish-Beef-Pastirma-Basturma-Original-ikbal.webp"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">BASTURMA</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/EbUt5ThCzcnlcbF6ndAyRTF8_pM=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/istockphoto-1315062108-612x612.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">EXTRA</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/FUNDJxmCEc2D-WCMpXYCb-5UMRQ=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Turkish-Beef-Pastirma-Basturma-Original-ikbal.webp"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">MORTADELLA</span>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="features" class="bg-white md:py-[100px]">
+  <h1 class="text-[1.4rem] md:text-4xl md:font-bold text-center text-button">Features</h1>
+  <div class="grid grid-rows-8 grid-cols-4 gap-4 relative mt-10 p-2 items-center md:items-stretch">
+    <div class="text-right row-span-6 flex flex-col justify-between">
+      <div class="mt-2 justify-self-end flex items-center md:items-end md:mr-4 flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">BOOKING STEPS</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-500">Easy Table Reservation</p>
+      </div>
+      <div class="mt-2 justify-self-end flex items-center md:items-end md:mr-4 flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">RESTAURANTS</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-500">Multi-location Management</p>
+      </div>
+      <div class="mt-2 justify-self-end flex items-center md:items-end md:mr-4 flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">GUESTS COUNTER</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-500">Select Number of Guests</p>
+      </div>
+      <div class="mt-2 justify-self-end flex items-center md:items-end md:mr-4 flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">CLEAR LEGEND</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-500">Display Calendar Legend</p>
+      </div>
+    </div>
+    <div class="row-span-6 col-span-2 drop-shadow-lg">
+      <span
+        class="block overflow-hidden relative">
+      <img src="./img/features.jpg" alt="" >  
+      </span>
+      </div>
+    <div class="text-left row-span-6 flex flex-col justify-between">
+      <div class="mt-2 justify-self-end flex items-center md:items-start flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">CALENDAR VIEW</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-300">Real Time Availability</p>
+      </div>
+      <div class="mt-2 justify-self-end flex items-center md:items-start flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">EXTRA SERVICES</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-300">Manage Custom Services</p>
+      </div>
+      <div class="mt-2 justify-self-end flex items-center md:items-start flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">REAL TIME HOURS</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-300">Ajax Time Slot Availability</p>
+      </div>
+      <div class="mt-2 justify-self-end flex items-center md:items-start flex-col "><span
+          class="text-[12px] md:text-[22px] font-semibold md:font-bold">SECURE PAYMENT</span>
+        <p class="mt-0 md:mt-2 text-[12px] md:text-[16px] text-gray-300">Multiple Cards Accepted</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="products" class="md:py-[100px]">
+  <div class="p-2">
+    <h1 class="mt-4 text-[1.4rem] md:text-4xl md:font-bold text-center text-button">Products</h1>
+    <div class="md:m-[50px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center">
+      <a href="detail.html#detail">
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4">
+          <img
+            src="http://cdn.dibtech.com.au/AW_khSXEVMel8qaRjKwocpUr9ak=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/raw-tomahawk-steak-shutterstock_738822868.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl">
+          </div>
+          <span class="uppercase m-2 bold text-md ">BEEF</span>
+        </div>
+      </a>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/2tgvw4Se6cQnDSKnIoQctJIL94k=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/Cartapo-Creek-Variety-Box.webp"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">CHICKEN</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/Xys7g1jj7A8Uq1STtEDTTWuWjoo=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/36_lamb_00.jpg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">LAMB</span>
+      </div>
+      <div
+        class="m-2 border-transparent rounded-xl flex flex-col md:m-8 cursor-pointer justify-center items-center text-center drop-shadow-lg bg-white">
+        <div class="md:h-[260px] h-[150px] flex justify-center p-2 md:p-4"><img
+            src="http://cdn.dibtech.com.au/gCvwfhEloxX3ZNMpsBA0jinzIbU=/400x200/filters:format(jpeg)/https://dibpos.s3.ap-south-1.amazonaws.com/media/rockdalemeats/media/5bb79a1e220000bb01dd1c81.jpeg"
+            alt="" class="w-full object-cover border-[1px] border-[#E5E5E5] rounded-xl"></div><span
+          class="uppercase m-2 bold text-md ">GOAT</span>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="">
+  <div class="mt-16 relative flex items-center h-[650px] justify-center text-white">
+    <div class="bg-black w-full h-[650px] absolute opacity-75"></div>
+    <div class="grid grid-cols-3 md:grid-cols-1 absolute top-[7%] ml-8">
+      <div class="col-span-2 flex flex-col items-center">
+        <h1 class="text-[33px] font-bold md:text-[3rem] whitespace-nowrap">FOOD DELIVERY</h1>
+        <p class="mt-2 md:mt-4 text-[12px] md:text-[20px] leading-7 ">Offer to your customers an extra
+          service. Insert your dishes in a easy way, offer a <br> home delivery service and start
+          receiving money thanks to the integrate payment <br> systems.</p>
+        <div class="relative">
+          <div
+            class="absolute ml-4 -skew-y-6 hidden md:block p-4 w-[20rem] h-[150px] bg-white -right-[5%] top-[8%] flex items-center justify-center text-center ">
+          </div>
+          <div
+            class=" -skew-y-6 hidden md:block p-4 w-[20rem] bg-[#821F05] -right-[10%] top-[8%] flex items-center justify-center text-center ">
+            <div class="">
+              <p class="text-[0.8rem] sm:text-[1.5rem] flex items-center font-bold">UP TO <br><span
+                  class="ml-2 text-[1rem] sm:text-[5rem]">50%</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <p class="m-8 text-[1rem] md:text-[1.4rem] font-bold">PAYMENT OPTIONS :</p>
+          <div class="md:mt-12 flex flex-row space-x-2 ml-[20px] ">
+            <div class=" cursor-pointer"><img src="./img/paypal.jpg" alt> </div>
+            <div class=" cursor-pointer"><img src="./img/visa.jpg" alt> </div>
+            <div class=" cursor-pointer"><img src="./img/master.jpg" alt> </div>
+            <div class=" cursor-pointer"><img src="./img/americal_express.jpg" alt> </div>
+        </div>
+      </div>
+      <div
+        class="md:hidden h-[7rem] w-[4rem] sm:h-[14rem] sm:w-[14rem] bg-button absolute -right-[0%] top-[8%] flex items-center justify-center text-center rounded-l-full md:rounded-full">
+        <div>
+          <p class="text-[0.8rem] sm:text-[1.5rem] font-bold">UP TO <br><span
+              class="text-[1rem] sm:text-[5rem]">50%</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="testimonials" class="py-5 md:py-[100px] bg-white">
+    <h1 class="text-[1.4rem] md:text-4xl md:font-bold text-center text-button" id="products">What our customer says,
+    </h1>
+  </div>
+  <div class="w-full h-full relative object-cover overflow-hidden bg-cover text-center items-center justify-center  ">
+    <div class="h-[100%] md:h-[500px]"><img src="./img/meat.jpg"
+        style="background-repeat:no-repeat;min-width:100%;width:100%;height:100%" class="object-cover brightness-50" >
+    </div>
+    <div class="h-auto w-full bg-black z-10 opacity-50"></div>
+    <div
+      class="p-4 w-full flex flex-col space-y-2 md:space-y-[30px] absolute m-auto h-full top-0 text-white z-0 flex flex-col justify-center items-center ">
+      <span class="text-4xl uppercase sm:items-center lg:text-[5rem] font-bold">Only $<!-- -->5</span>
+      <p class="uppercase text-sm md:text-lg sm-flex md:flex lg:flex xl:flex z-0I">Make a difference and choose
+        THE BEST for the management of your business !</p><button
+        class="p-3 px-[30px] ml-2 text-sm md:text-lg font-medium text-white bg-[#821F05] rounded-full">PURCHASE
+        NOW</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="w-full p-4 md:p-[100px] lg:p-[50px] bg-gray-900 ">
+  <div class="flex flex-col lg:flex-row md:justify-between lg:space-x-4 text-white font-Inter ">
+    <div class="flex flex-col leading-8 text-left">
+      <h1 class="text-xl lg:text-[1.5rem] font-bold border-b-[1px] pb-2">Contact for any Info</h1>
+      <hr class=" text-[#FFFFFF26] mt-2 block lg:hidden md:hidden">
+      <p class="mt-4 text-sm lg:text-xl leading-8 ">Always at your disposal for any question.<br>Call and we will be
+        happy to help.</p><a href="tel:+61 02 8363 7475"
+        class="flex text-sm lg:text-2xl mt-2 font-bold text-left decoration-none">
+        +61 02 8363 7475
+      </a><span class="flex block text-sm lg:text-2xl mt-2 font-bold text-left">
+
+        <a href="mailto:admin@rockdale.com">admin@rockdale.com</a>
+      </span><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/U9Xo9jrA77qrUNUP9"
+        class="text-sm lg:text-2xl mt-2 font-bold text-left">94 Railway St, Rockdale NSW 2216</a>
+    </div>
+    <div class="flex flex-col leading-8 text-left ">
+      <h1 class="text-xl lg:text-[1.5rem] font-bold border-b-[1px] pb-2">Stay Updated on Social</h1>
+      <hr class=" text-[#FFFFFF26] mt-2 block lg:hidden md:hidden">
+      <p class="mt-4 text-sm lg:text-xl leading-8 ">Channels always updated on the latest news.</p>
+      <div class="md:mt-4 flex flex-row space-x-2 "></div>
+    </div>
+    <div class="flex flex-col leading-8 text-left">
+      <h1 class="text-xl lg:text-[1.5rem] font-bold border-b-[1px] pb-2">Subscribe to the Newsletter</h1>
+      <hr class=" text-[#FFFFFF26] mt-2 block lg:hidden md:hidden">
+      <p class="mt-4 text-sm lg:text-xl leading-8 ">Receive our updates at any time.</p>
+      <form class="block mt-4 mb-8">
+        <div class="flex rounded-2xl mt-4 md:mt-0"><input type="email" placeholder="Enter your Email"
+            class="outline-none outline-none border-none text-white py-1 md:py-3 px-2 rounded-l-2xl bg-black"
+            value=""><button type="submit" class="bg-button rounded-r-2xl py-1 px-2 mr-4">Subscribe</button></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div
+  class="hidden md:flex lg:flex text-xs flex-col md:flex-row bg-gray-800 justify-between items-center p-8 text-white">
+  <div class="flex flex-col sm:flex-row pt-2 ">
+    <p class="pr-4">COPYRIGHT © 2022 - 2025 . ALL RIGHTS RESERVED.</p>
+  </div>
+  <div class="flex flex-col sm:flex-row pt-2"><a href="mailto:admin@rockdale.com"
+      class="pr-4 decoration-none cursor-pointer">admin@rockdale.com</a><span class="cursor-pointer">Powered by<a
+        target="_blank" rel="noreferrer" href="https://www.dibtech.com.au/"
+        class="text-[#822115] ml-1 text-md">Dibtech</a></span></div>
+</div>
+
+<div class="bg-gray-800 flex justify-center lg:hidden md:hidden"><span class="text-white p-3">Copyright-Rockdale Meat
+    Market </span></div>
+</body>
+
+</html>
